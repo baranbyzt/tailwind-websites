@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- we are importing tailwind css file -->
+     <link rel="stylesheet" href="../dist/output.css">
+
+        <!-- we are make page icon -->
+   <link rel="icon" href="./imges/gt_favicon.png">
+
+   <!-- we are importing fontawsome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Home</title>
+</head>
+<body>
+    
+    <!-- burası ana header kısımıdır -->
+    <div class="header_top_img overflow-hidden p-0  w-full h-3/6 z-20 grid place-content-center justify-center col-span-1 gap-1 relative">
+        <img class="header_background_img h-full w-full p-0 m-0" src="./imges/bg_head.jpg" alt="">
+        <img class="header_person_icon w-2/5 -mt-10 rounded-full ml-28 z-10" src="./imges/guy.jpg" alt="">
+        <p class=" header_name text-center mr-4 l mt-6">Anthony Russel</p>
+        <p class="text-center mr-4 text-md">A mystery person</p>
+        <p class="text-center mr-4 text-lg"><a href="#">anthony.russel42@example.com</a></p>
+</div>
+<!-- burası menü kısımıdır -->
+<div class="menudfdf w-full h-1/8 relative ">
+    
+
+    <ul class="menu_section_items_ul flex justify-center  p-5 ">
+        <li class="ml-8 pointer"><a href="#">HOME</a></li>
+        <li class="ml-8 pointer"><a href="./pages/about.html">ABOUT</a></li>
+        <li class="ml-8 pointer relative" onclick="dropdown()"><a href="#">MORE PAGES    <i class="fas fa-arrow-down"></i></a>
+
+<ul id="dropdown_items" class="pt-10 pl-10">
+
+    <li><a href="./pages/left_side.html" class="pointer"> LEFT SİDE </a></li>
+    <li><a href="./pages/right_side.html" class="pointer"> RİGHT SİDE </a></li>
+    <li><a href="./pages/blog_post.html" class="pointer"> BLOG POST </a></li>
+  
+</ul>
+</li>
+
+        <li class="ml-8 pointer"><a href="./pages/blog.html">BLOG</a></li>
+       </ul>
+
+       <ul class="burger_menu_ul  md:hidden absolute z-50  ">
+           <li onclick="burger()"><a href="#" class="pointer"><i class="fas fa-hamburger pointer"></i></a></li>
+
+           <ul id="burger_menu_ul">
+            <li><a href="./index.html" class="pointer"> HOME </a></li>
+            <li><a href="./pages/about.html" class="pointer"> ABOUT </a></li>
+   
+            <li><a href="./pages/blog.html" class="pointer"> BLOG </a></li>
+           </ul>
+       </ul>
+
+
+
+     
+</div>
+
+<div class="container h-auto text-center  mx-auto w-3/5 mt-5 p-10">
+    <p class="
+    text-2xl text-gray-700
+    ">Let me tell you something my friend. hope is a dangerous thing. hope can drive a man insane. you measure yourself by the people who measure themselves by you. it only took me six days.</p>
+</div>
+
+<div class="container w-auto mx-auto h-10 text-center border-gray-700 m-10">
+<p class="text-4xl">SERVICES</p>
+</div>
+
+<div class="section_1 container w-4/5 mx-auto p-5 grid gap-4 grid-cols-1 md:grid-cols-2  lg:grid-cols-4 ">
+    <div class="text-center p-4">
+<p class="text-2xl">CUSTOM WEBSITE DESIGN</p>
+<p class="mt-5">I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+<div class="btn text-center p-1 border-gray-700 cursor-pointer  mx-auto ">
+<p>READ MORE</p>
+</div>   
+</div>
+<div class="text-center p-4">
+    <p class="text-2xl">WORDPRESS INTEGRATION</p>
+    <p class="mt-5">I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+    <div class="btn text-center p-1 border-gray-700 cursor-pointer  mx-auto ">
+    <p>READ MORE</p>
+    </div>   
+    </div>
+    <div class="text-center p-4">
+        <p class="text-2xl">APPLICATION DEVELOPMENT</p>
+        <p class="mt-5">I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+        <div class="btn text-center p-1 border-gray-700 cursor-pointer  mx-auto ">
+        <p>READ MORE</p>
+        </div>   
+        </div>
+        <div class="text-center p-4">
+            <p class="text-2xl">SEO & SEM SERVICES & ALL PROPERTYS</p>
+            <p class="mt-5">I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect men.</p>
+            <div class="btn text-center p-1 border-gray-700 cursor-pointer  mx-auto ">
+            <p>READ MORE</p>
+            </div>   
+            </div>
+</div>
+
+<div class="container w-auto mx-auto h-10 text-center border-gray-700 mt-5">
+    <p class="text-4xl">RECENT WORKS</p>
+    </div>
+
+    <div class=" main_section container mx-auto grid grid-cols-1 lg:w-3/5 m-10  md:grid-cols-2 lg:grid-cols-3 gap-4  mt-20 mb-10">
+        <div class=" relative main_itemss text-center hover:opacity-70">
+          <a href="">
+
+            <img src="./imges/s1.jpg" >
+            <p class="m-5">SAMPLE TITLE - BIG DATA SOLUTIONS </p>
+          </a>
+        </div>
+        <div class=" relative main_itemss text-center hover:opacity-70">
+            <a href="">
+  
+              <img src="./imges/s1.jpg" >
+              <p class="m-5">SAMPLE TITLE - BIG DATA SOLUTIONS </p>
+            </a>
+          </div>
+          <div class=" relative main_itemss text-center hover:opacity-70">
+            <a href="">
+  
+              <img src="./imges/s1.jpg" >
+              <p class="m-5">SAMPLE TITLE - BIG DATA SOLUTIONS </p>
+            </a>
+          </div>
+          <div class=" relative main_itemss text-center hover:opacity-70">
+            <a href="">
+  
+              <img src="./imges/s1.jpg" >
+              <p class="m-5">SAMPLE TITLE - BIG DATA SOLUTIONS </p>
+            </a>
+          </div>
+          <div class=" relative main_itemss text-center hover:opacity-70">
+            <a href="">
+  
+              <img src="./imges/s1.jpg" >
+              <p class="m-5">SAMPLE TITLE - BIG DATA SOLUTIONS </p>
+            </a>
+          </div>
+          <div class=" relative main_itemss text-center hover:opacity-70">
+            <a href="">
+  
+              <img src="./imges/s1.jpg" >
+              <p class="m-5">SAMPLE TITLE - BIG DATA SOLUTIONS </p>
+            </a>
+          </div>
+
+    </div>
+
+<div class="container mx-auto p-10 h-40 bg-yellow-50 w-3/5 grid gap-4 grid-cols-1 lg:grid-cols-3 sec_22 mt-10">
+    <div class="col-span-2">
+       <p >A simple, nice-looking call to action box. Boxing is about respect. getting it for yourself, and taking it away from the other guy. no, this is mount everest.</p>
+    </div>
+    <div class="flex justify-center align-baseline col-span-1 ">
+  <p class="dt mx-auto bg-red-300 hover:bg-red-600 cursor-pointer">DOWNLOAD TEMPLATE</p>
+    </div>
+</div>
+
+    
+    <div class="container w-auto mx-auto h-10 text-center border-gray-700 mt-5 m-20">
+        <p class="text-4xl">CLIENTS</p>
+        </div>
+
+        <div class="container  m-10 ml-auto mx-5 ">
+            <img src="./imges/sample_clients.png" alt="">
+        </div>
+        
+
+<!-- footer section -->
+<div class="wrapper_footter w-full h-auto ">
+    <div class="footer_inner container w-full  mx-auto mt-20 p-10
+    grid grid-col-4 grid-flow-col gap-5 grid-rows-4  lg:grid-rows-2 xl:grid-rows-1">
+    
+    <div class="flex justify-center items-center p-5 ">
+  <div class="w-auto h-auto">
+    <p>CONTACT</p>
+    <br>
+    <p>+234239873237</p>
+    <p>some.email@somewhere.com</p>
+    <br>
+    <p>234 Hidden Pond Road, Ashland City, TN 37015</p>
+  </div>
+    </div>
+    <div class="flex justify-center items-center p-5">
+        <div class="w-auto h-auto">
+            <p>FOLLOW ME</p>
+            <br><br><br><br>
+      <div class="flex justfy-center">
+        <i class="fab fa-twitter text-4xl"></i>
+        <i class="fab fa-twitter text-4xl"></i>
+        <i class="fab fa-twitter text-4xl"></i>
+        <i class="fab fa-twitter text-4xl"></i>
+      </div>
+          </div>
+    </div>
+    <div class="flex justify-center items-center p-5">
+        <div class="w-auto h-auto">
+            <p>TEXT WIDGET</p>
+            <br>
+         <p>Lora iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p>
+        <br>
+        <p>Lora iste aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci maxime!</p> 
+        </div>
+    </div>
+    <div class="flex justify-center items-center p-5">
+        <div class="w-auto h-auto">
+            <p>CONTACT</p>
+            <br>
+            <p>+234239873237</p>
+            <p>some.email@somewhere.com</p>
+            <br>
+            <p>234 Hidden Pond Road, Ashland City, TN 37015</p>
+          </div>
+    </div>
+
+
+    </div>
+</div>
+
+<script src="./index.js"></script>
+</body>
+</html>
