@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* extra section with vanilya css start */
+html body{
+    width: 100%;
+    height: 100%;
+    display: relative;
+}
+.menu_responsive{
+    display: none
+}
+#responsive_child_menu{
+    display: none;
+}
+#item_2{
+    display: none;
+}
+body{
+    background-color: #e9e8e6;
+}
+@media screen and (max-width: 1100px) {
+    .menu_responsive{
+        display: flex;
+    }
+    .manu_ul{
+        display: none
+    }
+
+  }
+/* extra section with vanilya css end */
+
+@layer components {
+
+    /* menu section stat */
+    .menu_wrapper{
+        @apply  z-10 top-0 flex justify-center items-center absolute
+        lg:fixed w-full h-[90px];
+    }
+.menu_title{
+@apply  w-40 absolute  m-5 ml-auto mt-10;
+}
+.manu_ul{
+    @apply absolute left-5 float-left  flex ;
+}
+.menu_li{
+    @apply m-3 font-normal text-lg text-black hover:text-gray-900;
+}
+.menu_responsive{
+@apply absolute right-10 text-4xl  ;
+}
+.menu_responsive i {
+    @apply  w-full h-full cursor-pointer;
+}
+
+#responsive_child_menu{
+@apply z-10 bg-slate-300  absolute w-full 
+  h-screen flex justify-center items-center ;
+}
+.child_menu_li{
+@apply  m-5 hover:text-gray-900;
+}
+  /* menu section end */
+
+  /* index main content start */
+.index_main_content{
+    @apply w-full h-full  overflow-hidden grid grid-cols-1 lg:grid-cols-2
+    ;
+}
+.index_item1{
+@apply overflow-hidden static  float-left;
+}
+.index_item1 img{
+    @apply w-full h-screen lg:w-1/2 lg:fixed
+    ;
+}
+.index_item2{
+    @apply  container mx-auto  w-4/6 pt-40 float-right
+    flex justify-center items-center flex-wrap
+    ;
+}
+p{
+    @apply py-4 leading-loose text-lg;
+}
+.inter_img{
+    @apply my-4;
+}
+.signature{
+    @apply ml-80 w-1/3 p-5;
+}
+  /* index main content end */
+
+  /*  studio section starting  */
+
+.studio_section_2 {
+    @apply container mx-auto w-full lg:w-2/5    mb-10
+    mt-40 flex flex-wrap justify-center items-center ;
+}
+
+.studio_p{
+    @apply  px-2;
+}
+  /* studio section ending  */
+
+  /* works section starting  */
+.swiper-container{
+    @apply w-full pb-5 mb-5 ;
+}
+.studio_section_1{
+    @apply container mx-auto w-full lg:w-1/2    mb-10
+    mt-40 flex justify-center items-center text-center;
+}
+  /* works section ending  */
+
+  /* contact section stating  */
+.contact_wrapper{
+    @apply  
+    container mx-auto  lg:mt-80 mt-40
+    grid grid-cols-1 lg:grid-cols-2 p-5
+    ;
+}
+.email_section{
+@apply   
+pr-10
+;
+}
+.address_section{
+@apply p-10 lg:px-40;
+}
+.word_wrapper{
+    @apply  
+w-full  absolute bottom-0
+    ;
+}
+.bottom_word{
+    @apply text-center text-2xl font-normal 
+    bottom-10 mx-auto;
+}
+  /* contact section ending  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
